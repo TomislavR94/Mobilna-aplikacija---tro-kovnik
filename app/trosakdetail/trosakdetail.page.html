@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Detalji troška</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button><</ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button (click)="save()">Spremi</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-item>
+  <ion-label>Naziv troška:</ion-label>
+  <ion-input [(ngModel)]="trosak.title"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label>Vrsta troška:</ion-label>
+  <ion-input [(ngModel)]="trosak.vrstaTroska"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label>Iznos troška:</ion-label>
+  <ion-input [(ngModel)]="trosak.iznosTroska"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label>Datum nastanka:</ion-label>
+  <ion-input [(ngModel)]="trosak.datumNastanka"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-checkbox [(ngModel)]="trosak.completed"></ion-checkbox> Izvršeno?
+</ion-item>
+</ion-content>
